@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character set configuration -->
+    <meta charset="UTF-8">
+
+    <!-- Viewport configuration, scaling options -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Hide the browser UI -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="libs/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/css/wata.min.css">
+    <link rel="stylesheet" href="styles/css/custom.css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-99673562-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-99673562-2');
+</script>
+
+
+    <!-- Site title -->
+    <title>The Project by World Wide Developers</title>
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!-- The preloader we see before the whole site is loaded -->
+        <div id="preloader" class="valign-wrapper">
+            <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-blue-only actually-black">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- A status spinner to indicate that some process is going on -->
+        <div id="status">
+            <div class="preloader-wrapper small active">
+                <div class="spinner-layer spinner-blue-only actually-green">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation bar -->
+        <div class="navbar-fixed" id="nav">
+            <nav>
+                <div class="nav-wrapper">
+
+                    <!-- Site name -->
+                    <a href="index.html" class="brand-logo">The Project</a>
+
+                    <!-- Mobile menu button -->
+                    <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+
+                    <!-- Static menu -->
+                    <ul class="right hide-on-med-and-down table-of-contents">
+                        <li><a href="#triangles">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#project">Project</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#technology">Technology</a></li>
+                        <li><a href="#subscribe">Subscribe</a></li>
+                        <li><a href="#cases">Cases</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+                    <!-- Mobile menu, make sure it is equal to the statis menu -->
+                    <ul class="side-nav" id="mobile-menu">
+                        <li><a href="#triangles">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#project">Project</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#technology">Technology</a></li>
+                        <li><a href="#cases">Cases</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Triangles section -->
+        <div id="triangles" class="scrollspy">
+            <div id="output">
+                <div class="h1-wrapper valign-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col s12">
+                                <h1>Technology improvements for non-technologists.</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Action button -->
+                    <a class="btn-floating btn-large waves-effect waves-dark cyan.accent-1" id="explore">
+                        <i class="mdi-navigation-arrow-forward indigo-text text-lighten-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services section -->
+        <div class="section scrollspy" id="services">
+            <div class="container">
+                <div class="row">
+                    <h2>How we can help</h2>
+                    <div class="col s12 m10 offset-m1 l8 offset-l2">
+                        <p class="flow-text center-align">
+                            There are four areas of interests in which we are giving consultancy to anyone who want to know more about posibilities that
+                            Internet currently gives them.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Row with service icons -->
+                <div class="row services">
+                    <div class="col s12 l3">
+                        <i class="fa fa-5x fa-paint-brush animated-color"></i>
+                        <div class="divider"></div>
+                        <h5>Creative design</h5>
+                        <p>Ask us for stuff like branding, redesign concepts of your current website, tools and techniques for
+                            making your ideas beautiful.</p>
+                        <a class="btn waves-effect waves-dark white black-text" href="#get-started">Please</a>
+                    </div>
+                    <div class="col s12 l3">
+                        <i class="fa fa-5x fa-desktop animated-color"></i>
+                        <div class="divider"></div>
+                        <h5>E-marketing</h5>
+                        <p>Receive help within promotion of your brand, use of analytics, e-mail campaigns and how to empower
+                            the search results for your stuff.</p>
+                        <a class="btn waves-effect waves-dark white black-text modal-trigger" href="#get-started">Share</a>
+                    </div>
+                    <div class="col s12 l3">
+                        <i class="fa fa-5x fa-cog animated-color"></i>
+                        <div class="divider"></div>
+                        <h5>Infrastructure</h5>
+                        <p>We can support you with the best tools and techniques to keep your data safe and consistent, well
+                            monitored and updated.</p>
+                        <a class="btn waves-effect waves-dark white black-text modal-trigger" href="#get-started">Your</a>
+                    </div>
+                    <div class="col s12 l3">
+                        <i class="fa fa-5x fa-code animated-color"></i>
+                        <div class="divider"></div>
+                        <h5>Web development</h5>
+                        <p>Here we got for you advice about latest trends within web development and how to easily implement
+                            them to boost your project.</p>
+                        <a class="btn waves-effect waves-dark white black-text modal-trigger" href="#get-started">Story</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="divider"></div>
+        </div>
+
+        <!-- Project section -->
+        <div class="section scrollspy" id="project">
+            <div class="container">
+                <div class="row">
+                    <h2>The project</h2>
+                </div>
+            </div>
+            <div class="wide-container hide-on-small-only">
+                <!-- Shuffle grid -->
+                <div class="row valign-wrapper">
+                    <div class="col s12 m6 l4">
+                        <img src="images/wconc.svg" class="responsive-img" alt="Ice cream">
+                    </div>
+                    <div class="col s12 m6 l8">
+                        <p class="flow-text center-align">
+                            The aim of The Project is to deliver web goodies to those who are looking for better solutions for their ideas. Thus we are
+                            giving free advice about how to use latest achievements of technology on a daily basis.
+                        </p>
+                    </div>
+                </div>
+                <div class="row valign-wrapper">
+                    <div class="col s12 m6 l8">
+                        <p class="flow-text center-align">
+                            We are true fans of open source projects and our crew solely collaborate in some of them. This is also a bright point of
+                            our support, namely, we used to propose open source solutions at first before taking to commercial
+                            ones.
+                        </p>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <img src="images/wapp.svg" class="responsive-img" alt="Book cover">
+                    </div>
+                </div>
+            </div>
+            <div class="wide-container hide-on-med-and-up">
+                <!-- Shuffle grid -->
+                <div class="row">
+                    <div class="col s12">
+                        <img src="images/wconc.svg" class="responsive-img" alt="Ice cream">
+                    </div>
+                    <div class="col s12">
+                        <p class="flow-text center-align">
+                            The aim of The Project is to deliver web goodies to those who are looking for better solutions for their ideas. Thus we are
+                            giving free advice about how to use latest achievements of technology on a daily basis.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <img src="images/wapp.svg" class="responsive-img" alt="Book cover">
+                    </div>
+                    <div class="col s12">
+                        <p class="flow-text center-align">
+                            We are true fans of open source projects and our crew solely collaborate in some of them. This is also a bright point of
+                            our support, namely, we used to propose open source solutions at first before taking to commercial
+                            ones.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Get started section -->
+        <div class="section grey-section" id="get-started">
+            <div class="container">
+                <div class="row">
+                    <h2>Let's start</h2>
+                    <div class="col s12 m10 offset-m1 l8 offset-l2">
+                        <p class="flow-text center-align">
+                            To start you just need to fill the form on the bottom or send an email directly to <a href="mailto:theproject@wwdevelopers.net">theproject@wwdevelopers.net</a>. 
+                            Please do not forget to introduce yourselves a bit, where you come from and where would like
+                            to go. It's always nice to get to know each other when it comes to make something great together. We are working
+                            on The Project in our spare time so the speed of response is related to workload we have at the
+                            moment. Bear in mind that you can always hire us and get the support you need out of the box,
+                            just ask for more.
+                        </p>
+                        <p class="center-align">
+                            <a href="#contact" class="waves-effect waves-light btn-large cyan.accent-1 indigo-text text-lighten-5">
+                                <i class="fa fa-rocket left"></i>Let's begin
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About section -->
+        <div class="section scrollspy" id="about">
+            <div class="container">
+                <div class="row">
+                    <h2>Who we are</h2>
+                    <div class="col s12 m10 offset-m1 l8 offset-l2">
+                        <p class="flow-text center-align">
+                            Green Herring The Project is an outcome of our commercial activities as a web developers and infrastructure administrators.
+                            It's all began with our enthusiasm to new technologies and fact that we would like to share our
+                            knowledge.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="wide-container">
+                <div class="row team">
+                    <div class="col s12 m10 offset-m1 l6 animate">
+                        <div class="description-ball"></div>
+                        <div class="description center-align">
+                            <div class="row h4-row">
+                                <h4>System Administrator<br><small>Likes all the servers and databases stuff.
+                                    The bright points are Linux based commands and scripts for automation of tasks.</small></h4>
+                            </div>
+                            <div class="row">
+                                <div class="col s12">
+                                    <a href="mailto:admin@wwdevelopers.net">admin@wwdevelopers.net</a>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/admin.jpg" class="responsive-img" alt="System Administrator">
+                    </div>
+                    <div class="col s12 m10 offset-m1 l6 animate">
+                        <div class="description-ball"></div>
+                        <div class="description center-align">
+                            <div class="row h4-row">
+                                <h4>Web Developer<br><small>Using all the forces to make websites clear and well crafted. 
+                                    Technical improvements and redesign are his favorite fields.</small></h4>
+                            </div>
+                            <div class="row">
+                                <div class="col s12">
+                                    <a href="mailto:developer@wwdevelopers.net">developer@wwdevelopers.net</a>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/dev.jpg" class="responsive-img" alt="Web Developer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="divider"></div>
+        </div>
+
+        <!-- Technology section -->
+        <div class="section scrollspy" id="technology">
+            <div class="container">
+                <div class="row">
+                    <h2>Technology</h2>
+                    <div class="col s12 m10 offset-m1 l8 offset-l2">
+                        <p class="flow-text center-align">
+                            Here is the basic set of the web things we are keen on daily. In these we are most experienced and for sure you will receive
+                            support you need.
+                        </p>
+                    </div>
+                </div>
+                <div class="row tech">
+                    <div class="col s12 m10 offset-m1 l10 offset-l1">
+                        <div class="col s4 m2 l2">
+                            <img src="images/technologies/aws-cloudfront.svg" class="responsive-img" alt="Slack">
+                        </div>
+                        <div class="col s4 m2 l2">
+                            <img src="images/technologies/docker.svg" class="responsive-img" alt="Slack">
+                        </div>
+                        <div class="col s4 m2 l2">
+                            <img src="images/technologies/github.svg" class="responsive-img" alt="Slack">
+                        </div>
+                        <div class="col s4 m2 l2">
+                            <img src="images/technologies/html5.svg" class="responsive-img" alt="Slack">
+                        </div>
+                        <div class="col s4 m2 l2">
+                            <img src="images/technologies/aws-s3.svg" class="responsive-img" alt="Slack">
+                        </div>
+                        <div class="col s4 m2 l2">
+                            <img src="images/technologies/grafana.svg" class="responsive-img" alt="Slack">
+                        </div>
+                        <div class="col s4 m2 l2">
+                            <img src="images/technologies/google.svg" class="responsive-img" alt="Slack">
+                        </div>
+                        <div class="col s4 m2 l2">
+                            <img src="images/technologies/mailchimp.svg" class="responsive-img" alt="Slack">
+                        </div>
+                        <div class="col s4 m2 l2">
+                            <img src="images/technologies/linux.svg" class="responsive-img" alt="Slack">
+                        </div>
+                        <div class="col s4 m2 l2">
+                            <img src="images/technologies/aws-ec2.svg" class="responsive-img" alt="Slack">
+                        </div>
+                        <div class="col s4 m2 l2">
+                            <img src="images/technologies/css3.svg" class="responsive-img" alt="Slack">
+                        </div>
+                        <div class="col s4 m2 l2">
+                            <img src="images/technologies/wordpress.svg" class="responsive-img" alt="Slack">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subscribe section -->
+        <div class="section grey-section scrollspy" id="subscribe">
+            <div class="container">
+                <div class="row">
+                    <h2>Subscribe</h2>
+                    <div class="col s12 m10 offset-m1 l8 offset-l2">
+                        <p class="flow-text center-align">
+                            Don't miss our offers and receive some pro tips. We promise we won't spam you, unsubscribe anytime you want.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s8 offset-s2">
+                        <!-- Begin MailChimp Signup Form -->
+                        <div id="mc_embed_signup">
+                            <form action="//greenherring.us16.list-manage.com/subscribe/post?u=0bfb4f3c7b636f4d3981960f9&amp;id=57ffd962d0" method="post"
+                                id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+                                <div id="mc_embed_signup_scroll" class="input-field">
+                                    <label for="mce-EMAIL">Your email</label>
+                                    <input type="email" name="EMAIL" class="email" id="mce-EMAIL" required>
+                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div class="cant-touch-this">
+                                        <input type="text" name="b_4131d254e34d85ebd3ba25ad3_302b5221bd" tabindex="-1" value="">
+                                    </div>
+                                    <div class="clear center-align">
+                                        <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="waves-effect waves-light btn-large cyan.accent-1 indigo-text text-lighten-5">
+                                            <i class="fa fa-paper-plane left"></i>Subscribe
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!--End mc_embed_signup-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cases section -->
+        <div class="section scrollspy" id="cases">
+            <div class="container">
+                <div class="row">
+                    <h2>Cases</h2>
+                    <div class="col s12 m10 offset-m1 l8 offset-l2">
+                        <p class="flow-text center-align">
+                            Below are few life examples of our work to let you know how we are supporting all the non-technologists friends.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="wide-container">
+                <div class="row masonry">
+                    <div class="col s12 m6 l4">
+                        <div class="card animate">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="images/beauty.jpg" alt="Building">
+                            </div>
+                            <a class="btn-floating btn-large waves-effect waves-dark cyan.accent-1 activator">
+                                <i class="mdi-navigation-expand-less indigo-text text-lighten-5"></i>
+                            </a>
+                            <div class="card-reveal">
+                                <span class="card-date grey-text">Graphic design</span>
+                                <span class="card-title black-text">A sort of beauty <i class="mdi-navigation-expand-more right"></i></span>
+                                <p>
+                                    Some person asked us for help with logo and color set for his website. We gave a guide about how to suit brand to the company
+                                    sector.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l8">
+                        <div class="card animate">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="images/boost.jpg" alt="Bottles">
+                            </div>
+                            <a class="btn-floating btn-large waves-effect waves-dark cyan.accent-1 activator">
+                                <i class="mdi-navigation-expand-less indigo-text text-lighten-5"></i>
+                            </a>
+                            <div class="card-reveal">
+                                <span class="card-date grey-text">Web development</span>
+                                <span class="card-title black-text">Boost me all <i class="mdi-navigation-expand-more right"></i></span>
+                                <p>
+                                    The question was related to poor performance of company website. We took the challenge and gave to the requestor a package
+                                    of support. We created a site map for better understanding of the structure, made several
+                                    performance tests, added site to monitor tools and finally created a step by step guide
+                                    of what have to be repaired, upgraded and implemented to have the performance at best.
+                                    This was combination of web development and administration services cause requestor ended
+                                    up with new server and database.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m12 l4">
+                        <div class="card animate">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="images/slow.jpg" alt="Yoga">
+                            </div>
+                            <a class="btn-floating btn-large waves-effect waves-dark cyan.accent-1 activator">
+                                <i class="mdi-navigation-expand-less indigo-text text-lighten-5"></i>
+                            </a>
+                            <div class="card-reveal">
+                                <span class="card-date grey-text">Infrastructure</span>
+                                <span class="card-title black-text">Slow motion <i class="mdi-navigation-expand-more right"></i></span>
+                                <p>
+                                    We were asked for support in choosing new infrastructure for website. Current server was overloaded and cannot be scaled
+                                    up to fit the requirements of growing traffic. Our help came down to deep report of services
+                                    currently used and few solutions for the future prospects.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card animate">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="images/conversion.jpg" alt="Coffee">
+                            </div>
+                            <a class="btn-floating btn-large waves-effect waves-dark cyan.accent-1 activator">
+                                <i class="mdi-navigation-expand-less indigo-text text-lighten-5"></i>
+                            </a>
+                            <div class="card-reveal">
+                                <span class="card-date grey-text">Graphic design</span>
+                                <span class="card-title black-text">What's going on <i class="mdi-navigation-expand-more right"></i></span>
+                                <p>
+                                    The starting point here was poor conversion rate but going forward the challenge was terrible UX of website. After a little
+                                    workshops we proposed a sort of changes within site structure. The list consisted of
+                                    about 60 points of tasks from small like lack of form validation to bigger things like
+                                    huge number of 404 errors.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card animate">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="images/pet.jpg" alt="A4 paper mockup">
+                            </div>
+                            <a class="btn-floating btn-large waves-effect waves-dark cyan.accent-1 activator">
+                                <i class="mdi-navigation-expand-less indigo-text text-lighten-5"></i>
+                            </a>
+                            <div class="card-reveal">
+                                <span class="card-date grey-text">Infrastructure</span>
+                                <span class="card-title black-text">Improve my pet house <i class="mdi-navigation-expand-more right"></i></span>
+                                <p>
+                                    It was just a question about best possible server-database combination for low traffic website. Got to mention that the person
+                                    who asked did not have much funds to run the idea. We took our expertise and gave cheap
+                                    but great solution for running the project. We were asked also for help with relocation
+                                    of resources which we did at no costs but with huge satisfaction. The idea was a charity
+                                    fund for homeless animals.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card animate">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="images/search.jpg" alt="Drone">
+                            </div>
+                            <a class="btn-floating btn-large waves-effect waves-dark cyan.accent-1 activator">
+                                <i class="mdi-navigation-expand-less indigo-text text-lighten-5"></i>
+                            </a>
+                            <div class="card-reveal">
+                                <span class="card-date grey-text">Web development</span>
+                                <span class="card-title black-text">I can't find myself <i class="mdi-navigation-expand-more right"></i></span>
+                                <p>
+                                    The issue was poor search results of some website. After quick research we noticed that said website did not have SEO basics
+                                    included in HEAD section, also the structure could be improved in a few ways. We did
+                                    a report and make a guide for future implementation. Just for fun of being helpful we
+                                    added required META stuff and linked site to Google Analytics.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="divider"></div>
+        </div>
+
+        <!-- Contact form section -->
+        <div class="section scrollspy" id="contact">
+            <div class="container">
+                <div class="row">
+                    <h2>Contact us</h2>
+                    <div class="col s12 m10 offset-m1 l8 offset-l2">
+                        <p class="flow-text center-align">
+                            Let us know if you want to work on your project with us or just drop a line to say hello. We're always glad to receive your
+                            messages.
+                        </p>
+                        <p class="right-align">
+                            <i class="fa fa-info-circle"></i> Last name is not required.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <form class="col s12 m12 l8 offset-l2" accept-charset="UTF-8" action="https://usebasin.com/f/d76bb6176461" method="POST" novalidate>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="first-name" name="first-name" type="text" class="required">
+                                <label for="first-name">First name</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="last-name" name="last-name" type="text">
+                                <label for="last-name">Last name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" name="email" type="email" class="required">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="message" name="message" class="materialize-textarea required"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
+                        <div class="center-align">
+                            <button type="submit" class="btn-large disabled">
+                                Send
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="wide-container">
+                <div class="row">
+                    <div class="col s12">
+                        <!-- Google map container -->
+                        <div id="map-canvas" class="map"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container contact-details">
+                <div class="row">
+                    <div class="col s12 m6 l4">
+                        <h5>Headquarter</h5>
+                        <div class="divider"></div>
+                        <address>
+                            Warsaw<br> Poland
+                            <br>
+                        </address>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <h5>Reach us</h5>
+                        <div class="divider"></div>
+                        <p>
+                            +48-666-999-666<br>
+                            <a href="mailto:theproject@wwdevelopers.net">theproject@wwdevelopers.net</a>
+                        </p>
+                    </div>
+                    <div class="col s12 m6 l4 modern-connect">
+                        <h5>Modern connect</h5>
+                        <div class="divider"></div>
+                        <p>
+                            <a href="skype:wwdevelopers?chat"><i class="fa fa-skype"></i> wwdevelopers.skype</a><br>
+                            <a href="//wwdevelopers.slack.com/"><i class="fa fa-slack"></i> wwdevelopers.slack</a><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer section -->
+        <footer class="page-footer">
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2017 WWD | <a href="ajax/pages/privacy-policy.html" class="ajax-link">Privacy policy</a>
+
+                    <!-- Social icons -->
+                    <span class="social right">
+                        <a href="#!"><i class="fa fa-dribbble"></i></a>
+                        <a href="#!"><i class="fa fa-github"></i></a>
+                        <a href="#!"><i class="fa fa-share-alt-square"></i></a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Ajax box container, waiting for its turn -->
+    <div id="ajax-box" class="translate"></div>
+
+    <!-- Scripts -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN0myZOP5_9Tuxiy89chRsXOSRuynXIto&callback=initializeMap"
+        async defer></script>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/build.js"></script>
+</body>
+
+</html>

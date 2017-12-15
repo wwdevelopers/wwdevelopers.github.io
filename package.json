@@ -1,0 +1,33 @@
+{
+  "name": "ghtech",
+  "version": "1.0.0",
+  "description": "Site of Green Herring on GitHub ",
+  "main": "Gruntfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.12.3"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-uglify": "^0.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/greenherring/greenherring.github.io.git"
+  },
+  "keywords": [
+    "Green Herring",
+    "technology",
+    "infrastructure",
+    "development",
+    "consultancy"
+  ],
+  "author": "green herring",
+  "license": "GPL"
+}
