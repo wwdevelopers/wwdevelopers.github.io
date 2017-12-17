@@ -29,3 +29,7 @@ margin-bottom: 20px;
 .modal-content p {
     font-size:16px !important;
 }
+.team .description .h4-row {
+    padding-right: 30px;
+    padding-left: 30px;
+}
