@@ -1,7 +1,11 @@
 /* 
 Some custom additional CSS
 */
-@media only screen and (max-width: 1353px) and (min-width: 993px){
+@media only screen and (min-width: 1701px){
+    .team .description .h4-row {
+        margin-top: 20%;
+    }}
+@media only screen and (max-width: 1700px) and (min-width: 993px){
 .team .description .h4-row {
     margin-top: 15%;
 }}
@@ -32,4 +36,14 @@ margin-bottom: 20px;
 .team .description .h4-row {
     padding-right: 30px;
     padding-left: 30px;
+}
+.tech img {
+    margin-left: auto;
+    margin-right: auto;
+}
+.waves-effect.waves-secondary-color .waves-ripple, h2:after {
+    background-color: #6FC5D6;
+}
+nav .table-of-contents a.active {
+    border-bottom: 4px solid #6FC5D6;
 }
