@@ -42,8 +42,8 @@ margin-bottom: 20px;
     margin-right: auto;
 }
 .waves-effect.waves-secondary-color .waves-ripple, h2:after {
-    background-color: #6FC5D6;
+    background-color: #F14742;
 }
 nav .table-of-contents a.active {
-    border-bottom: 4px solid #6FC5D6;
+    border-bottom: 4px solid #F14742;
 }
