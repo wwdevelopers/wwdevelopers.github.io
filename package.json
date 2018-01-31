@@ -1,7 +1,7 @@
 {
-  "name": "ghtech",
+  "name": "wwdevelopers",
   "version": "1.0.0",
-  "description": "Site of Green Herring on GitHub ",
+  "description": "Site of World Wide Developers on GitHub ",
   "main": "Gruntfile.js",
   "directories": {
     "doc": "docs"
@@ -19,15 +19,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/greenherring/greenherring.github.io.git"
+    "url": "https://github.com/wwdevelopers/wwdevelopers.github.io"
   },
   "keywords": [
-    "Green Herring",
+    "World Wide Developers",
     "technology",
     "infrastructure",
     "development",
     "consultancy"
   ],
-  "author": "green herring",
+  "author": "World Wide Developers",
   "license": "GPL"
 }
